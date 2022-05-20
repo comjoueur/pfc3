@@ -1,0 +1,10 @@
+django
+djangorestframework
+pip-tools
+channels
+django-cors-headers
+balanced_kmeans
+kmeans-pytorch
+sklearn
+django-extensions
+graphviz

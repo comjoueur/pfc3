@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  {% load static %}
+  <script src="{% static 'controller.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'controller.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body ontouchstart="showCoordinates(event, '')" ontouchmove="showCoordinates(event, '')">
+  <div id="title">SETTINGS</div>
+  <div id="touches">0 touches / s</div>
+  <div id="frames">0 frames / s</div>
+  <div id="input-token">
+    <input id="token" name="token" />
+    <br />
+    <br />
+    <button onclick="performWebSocket()">Submit</button>
+  </div>
+  <div id="controls" name="controls" style="display: none;">
+    <br />
+    <button onclick="turnLeft()" ontouchstart="showCoordinates(event, 'left')" ontouchmove="showCoordinates(event, 'left')" id="left-button">LEFT</button>
+    <button onclick="turnRight()" ontouchstart="showCoordinates(event, 'right')" ontouchmove="showCoordinates(event, 'right')" id="right-button">RIGHT</button>
+    <br />
+    <button onclick="turnUp()" ontouchstart="showCoordinates(event, 'up')" ontouchmove="showCoordinates(event, 'up')" id="up-button">UP</button>
+    <button onclick="turnDown()" ontouchstart="showCoordinates(event, 'down')" ontouchmove="showCoordinates(event, 'up')" id="down-button">DOWN</button>
+    <br />
+    <button onclick="start()" ontouchstart="showCoordinates(event, 'start')" ontouchmove="showCoordinates(event, 'start')" id="start-button">START</button>
+    <button onclick="pause()" ontouchstart="showCoordinates(event, 'pause')" ontouchmove="showCoordinates(event, 'pause')" id="pause-button">PAUSE</button>
+  </div>
+</body>
+
+</html>
