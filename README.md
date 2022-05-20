@@ -1,6 +1,4 @@
-# PFC2-API
-
-Project make to manage pacman game with mobile virtual controller
+# PFC3
 
 ## Set-up
 
